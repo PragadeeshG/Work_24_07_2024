@@ -1,0 +1,15 @@
+create table if not exists reference_policy_adherence(
+system_id Integer not null,
+system_owner varchar(255) null,
+active_account char null,
+system_type_id Integer null,
+system_type varchar(255) null,
+system_status varchar(255) null,
+system_description Integer null,
+applications_count Integer null,
+launch_countries varchar(255) null,
+launch_countries_count Integer null,
+application_name_list varchar(255) null,
+status varchar(255) null,
+remarks varchar(255) null,
+constraint reference_policy_adherence_pk primary key(system_id));

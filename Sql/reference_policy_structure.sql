@@ -1,0 +1,16 @@
+create table if not exists reference_policy_structure(
+record_key Integer not null,
+policy_checksum_code Integer null,
+policy_checksum_code_position varchar(255) null,
+policy_checksum_code_length varchar(255) null,
+policy_check_digits_position varchar(255) null,
+policy_check_digits_length varchar(255) null,
+policy_identifier_position char null,
+policy_identifier_length varchar(255) null,
+tree_identifier_position varchar(255) null,
+tree_identifier_length varchar(255) null,
+policy_national_id_length varchar(255) null,
+system_number_position varchar(255) null,
+system_number_length varchar(255) null,
+policy_total_length varchar(255) null,
+constraint reference_policy_structure_pk primary key(record_key));
